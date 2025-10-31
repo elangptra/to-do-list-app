@@ -15,7 +15,7 @@ return new class extends Migration
             $table->uuid("todo_id")->primary();
             $table->uuid('user_id')->index('user_id');
             $table->string('title', 255);
-            $table->string('description',255)->nullable();
+            $table->string('description')->nullable();
             $table->boolean('is_completed')->default(false);
             $table->date('due_date')->nullable();
             $table->timestamps();
